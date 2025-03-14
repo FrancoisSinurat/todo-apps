@@ -11,15 +11,16 @@ A simple To-Do List application using **Laravel 12** (Backend) and **Next.js** (
 ---
 
 ## 📂 Project Structure
-📦 todo-app 
-    ┣ 📂 todo-backend (Laravel 12) 
-    ┣ 📂 todo-frontend (Next.js + React Query) 
-    ┣ 📜 README.md
-
+```
+📦 todo-app
+ ┣ 📂 backend (Laravel 12)
+ ┣ 📂 frontend (Next.js + React Query)
+ ┣ 📜 README.md
+```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Running Application
 
 ### 🔹 1. Running todo-backend (Laravel 12)
 #### 1️⃣ Clone Repository and Navigate to Backend
@@ -28,39 +29,54 @@ git clone <repository-url>
 cd backend
 ```
 #### 2️⃣ Install Dependencies
+```sh
 composer install
+```
 
 #### 3️⃣ Setup Environment
+```sh
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=todo_db
 DB_USERNAME=root
 DB_PASSWORD=
-
+```
 #### 4️⃣ Generate Application Key
-
+```sh
 php artisan key:generate
+```
 
 #### 5️⃣ Run Migrations & Seeders
+```sh
 php artisan migrate --seed
+```
 
 #### 6️⃣ Start the Backend Server
+```sh
 php artisan serve
+```
 
-===
+---
 🔹 2. Running todo-frontend (Next.js)
 
 #### 1️⃣ Navigate to Frontend
+```sh
 cd frontend
+```
 
 #### 2️⃣ Install Dependencies
+```sh
 npm install
+```
 
 #### 3️⃣ Start the Frontend Server
+```sh
 npm run dev
+```
 
-===
+---
+
 ## 📜 API Documentation (Swagger / OpenAPI)
 ### 📝 API Endpoints
 | Method | Endpoint         | Description                        |
